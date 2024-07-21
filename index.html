@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar Nuevo Usuario</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace del archivo CSS -->
-    
+    <title>Gestionar Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -25,16 +24,34 @@
 
             <label for="rol">Rol:</label>
             <select id="rol" name="rol">
-                <option value="administrador">Usuario</option>
+                <option value="usuario">Usuario</option>
                 <option value="administrador">Administrador</option>
                 <option value="recepcionista">Recepcionista</option>
                 <option value="otro">Otro</option>
             </select>
 
-            <button type="submit">Agregar Usuario/Admin/Recepcionista</button>
+            <button type="submit">Agregar Usuario</button>
         </form>
-        <div id="message"></div> <!-- Div para mostrar mensajes -->
+        <div id="message"></div>
     </div>
-    <script defer src="script.js"></script> <!-- Enlace del archivo JavaScript -->
+    <div class="container2">
+        <h2>Lista de Usuarios</h2>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Rol</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Usuarios serán insertados aquí -->
+            </tbody>
+        </table>
+    </div>
+    <script defer src="script.js"></script>
 </body>
 </html>
